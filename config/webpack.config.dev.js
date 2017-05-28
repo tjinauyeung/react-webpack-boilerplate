@@ -6,7 +6,7 @@ const config = merge(base, {
   entry: {
     application: [
       'webpack/hot/only-dev-server',
-      './index.js'
+      './App.js'
     ]
   },
   devServer: {
