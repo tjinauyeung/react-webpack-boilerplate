@@ -1,0 +1,15 @@
+{
+  "name": "webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "webpack boilerplate for bootstrapping your projects",
+  "main": "index.js",
+  "author": "tjinauyeung",
+  "license": "MIT",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.24.1",
+    "eslint": "^3.19.0",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
