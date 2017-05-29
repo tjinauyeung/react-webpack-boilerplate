@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './App.scss';
+import { Wrapper, Title } from './styles';
 
 const App = () => (
-  <h1>Hello world!</h1>
+  <Wrapper>
+    <Title>Hello world!</Title>
+  </Wrapper>
 );
 
 export default App;
