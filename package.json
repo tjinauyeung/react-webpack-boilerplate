@@ -6,13 +6,16 @@
   "author": "tjinauyeung",
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_ENV=dev webpack-dev-server --config ./config/webpack.config.dev.js --progress",
+    "dev": "webpack-dev-server --config ./config/webpack.config.dev.js --progress --colors",
+    "build": "rm -rf ./dist && webpack -p --config ./config/webpack.config.js --progress --colors",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "lint:css": "stylelint './components/**/*.js'"
   },
   "dependencies": {
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "styled-components": "^2.0.0"
   },
   "devDependencies": {
     "babel": "^6.23.0",
@@ -25,8 +28,9 @@
     "html-webpack-plugin": "^2.28.0",
     "node-sass": "^4.5.3",
     "react-hot-loader": "next",
-    "sass-loader": "^6.0.5",
-    "style-loader": "^0.18.1",
+    "stylelint": "^7.10.1",
+    "stylelint-config-standard": "^16.0.0",
+    "stylelint-processor-styled-components": "^0.1.0",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5",
     "webpack-hot-middleware": "^2.18.0",

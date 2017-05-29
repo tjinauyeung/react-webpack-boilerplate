@@ -4,6 +4,7 @@ const plugins = require('./webpack.plugins');
 const paths = require('./webpack.paths');
 
 const config = {
+  devtool: 'cheap-module-source-map',
   context: paths.context,
   entry: [
     './index.js'
