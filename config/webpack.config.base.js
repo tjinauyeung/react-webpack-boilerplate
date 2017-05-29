@@ -6,7 +6,7 @@ const paths = require('./webpack.paths');
 const config = {
   context: paths.context,
   entry: [
-    './App.js'
+    './index.js'
   ],
   output: {
     path: paths.output,
